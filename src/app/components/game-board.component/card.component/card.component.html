@@ -1,0 +1,9 @@
+<div *ngIf="card">
+  <div *ngIf="showCardInfo" [ngClass]="['card', getColorText(card)]">
+    <div class="card-value">{{card.value}}</div>
+    <div>{{getColorText(card)}}</div>
+  </div>
+  <div *ngIf="!showCardInfo" class="card">
+    <div class="uno-card">UNO</div>
+  </div>
+</div>

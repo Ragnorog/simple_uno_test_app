@@ -1,0 +1,12 @@
+<div class="end-game-box">
+  <div (click)="endGame()"
+       class="end-game-btn">
+    End game
+  </div>
+</div>
+<app-pile></app-pile>
+
+<app-player *ngFor="let player of players; let i = index"
+            [player]="player"
+            [ngClass]="['p'+i]"></app-player>
+

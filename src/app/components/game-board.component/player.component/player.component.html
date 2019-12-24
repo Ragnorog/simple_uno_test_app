@@ -1,0 +1,11 @@
+<div *ngFor="let card of player.hand; let i = index"  class="player-hand">
+  <app-card [card]="card"
+            (click)="putCard(card)"
+            [showCardInfo]="!player.bot"
+            [ngClass]="{
+ 'player-bot':player.bot,
+ 'player':!player.bot}"></app-card>
+</div>
+<div *ngIf="!player.bot"
+     (click)="getCard()"
+      class="get-card">Get one more card</div>
