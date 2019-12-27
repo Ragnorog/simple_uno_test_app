@@ -13,7 +13,7 @@ export class CardComponent {
   card: Card;
 
   @Input()
-  showCardInfo: boolean
+  showCardInfo: boolean;
 
   constructor(private pileService: PileService) {
 
