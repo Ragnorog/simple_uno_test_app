@@ -1,3 +1,5 @@
+<div class="player-name">Player 1</div>
+<div class="cards">
 <div *ngFor="let card of player.hand; let i = index"  class="player-hand">
   <app-card [card]="card"
             (click)="putCard(card)"
@@ -6,6 +8,7 @@
  'player-bot':player.bot,
  'player':!player.bot}"></app-card>
 </div>
-<div *ngIf="!player.bot"
-     (click)="getCard()"
-      class="get-card">Get one more card</div>
+</div>
+<!--<div *ngIf="!player.bot"-->
+     <!--(click)="getCard()"-->
+      <!--class="get-card">Get one more card</div>-->
