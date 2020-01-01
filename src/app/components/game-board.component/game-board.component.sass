@@ -4,6 +4,7 @@
   display: grid
   grid-template-columns: 1fr 1fr 1fr
   grid-template-rows: 1fr 1fr 1fr
+  position: relative
 
 //.end-game-box
 //  display: grid
@@ -56,3 +57,54 @@ app-pile
   margin-top: -110px
 .p0, .p2
   margin-right: 45px
+.settings-btn
+  height: 30px
+  width: 30px
+  position: absolute
+  top: -15px
+  right: 20px
+  background: url("~src/assets/images/settings-img.svg") no-repeat center
+  background-size: contain
+#overlay
+  position: fixed
+  display: none
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  //background-color: #05335F
+  //opacity: 0.83
+  z-index: 2
+  cursor: pointer
+.shadow
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background-color: #05335F
+  opacity: 0.83
+.menu-box
+  position: absolute
+  top: 20%
+  left: 40%
+  height: 500px
+  width: 300px
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  background: rgba(255, 255, 255, 0.25)
+  border: 7px solid rgba(255, 255, 255, 0.75)
+  border-radius: 25px
+  font-weight: normal
+  font-family: "Alfa Slab One", cursive
+  font-size: 36px
+  opacity: 100%
+  text-align: center
+  letter-spacing: 0.1em
+  color: #FF8A00
+  text-shadow: -2px 1px 10px rgba(0, 0, 0, 0.96)

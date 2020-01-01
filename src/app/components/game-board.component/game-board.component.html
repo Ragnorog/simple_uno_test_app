@@ -4,6 +4,16 @@
     <!--End game-->
   <!--</div>-->
 <!--</div>-->
+<div id="overlay" (click)="menuOff()">
+  <div class="shadow"></div>
+  <div class="menu-box">
+    <div class="item">New Game</div>
+    <div class="item">Options</div>
+    <div class="item">Authors</div>
+    <div class="item">Resume</div>
+  </div>
+</div>
+<div class="settings-btn" (click)="menuOn()"></div>
 <app-pile></app-pile>
 
 <app-player *ngFor="let player of players; let i = index"

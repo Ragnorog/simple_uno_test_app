@@ -27,4 +27,12 @@ export class GameBoardComponent {
     this.pileService.cleanPile();
     window.history.back();
   }
+  menuOn() {
+    document.getElementById('overlay').style.display = 'block';
+  }
+
+  menuOff() {
+    document.getElementById('overlay').style.display = 'none';
+  }
 }
+
